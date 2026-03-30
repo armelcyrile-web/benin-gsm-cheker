@@ -1,0 +1,17 @@
+.cont{
+    display: flex;
+    
+
+}
+input{
+    border: none;
+    outline: none;
+}
+span{
+   color: blue;
+}
+#number{
+    display: none;
+    color: red;
+
+}
