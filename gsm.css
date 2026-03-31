@@ -1,5 +1,14 @@
 .cont{
     display: flex;
+    align-items: center;
+    border: 2px solid #ccc;
+    border-radius: 8px ;
+    padding: 5px 10px;
+    width: fit-content;
+    background-color: white;
+
+
+    
     
 
 }
@@ -8,10 +17,15 @@ input{
     outline: none;
 }
 span{
-   color: blue;
+   color:#555;
+   font-weight: bold;
+   
 }
 #number{
     display: none;
     color: red;
 
+}
+#logo_reseau{
+    display: none;
 }
