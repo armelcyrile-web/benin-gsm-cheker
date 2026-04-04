@@ -51,6 +51,14 @@ let celtis = [
   "92",
   "93",
 ];
+const burger = document.querySelector(".burger");
+const nav = document.querySelector("ul");
+
+burger.addEventListener("click", () => {
+  nav.classList.toggle("nav-active");
+
+  burger.classList.toggle("toggle-effect");
+});
 
 const gsm_check = document.getElementById("num");
 
@@ -82,7 +90,7 @@ function cheker() {
       logo.src = "images/celtislogo.jpg";
       logo.style.display = "block";
     } else {
-      affichage.textContent = "inconnu";
+      affichage.textContent = "Numéro inconnu";
     }
   } else {
     affichage.textContent = " ";

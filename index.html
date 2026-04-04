@@ -1,21 +1,94 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="gsm.css">
-</head>
-<body>
-    <label for=""> Entrer un numéro</label>
-<div class="cont">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Inter:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
 
-    <span>(+229) 01</span><span></span><label for="contact"></label><input type="text" placeholder=" Ex : 95000000  " name="" id="num" maxlength="8">
-</div> <br>
- <p id="number">veuillez  enter  des nombres svp !!!</p> 
- <p id="resultat"></p>
- <img src="" alt="" id="logo_reseau" >
-           
+    <link rel="stylesheet" href="gsm.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">LOGO</div>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Moov</a></li>
+          <li><a href="#">Mtn</a></li>
+          <li><a href="#">Celtis</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </nav>
+      <div class="burger">
+        <span></span>
+      </div>
+    </header>
+    <main>
+      <label for=""> Identifier l'opérateur mobile</label>
+      <div class="cont">
+        <i class="fas fa-phone-alt"></i>
+        <span>(+229) 01</span><span></span><label for="contact"></label
+        ><input
+          type="text"
+          placeholder=" Ex : 95 00 00 00  "
+          name=""
+          id="num"
+          maxlength="8"
+        />
+      </div>
+      <br />
+      <p id="number">veuillez entrer des nombres svp !!!</p>
+      <p id="resultat"></p>
+      <img src="" alt="" id="logo_reseau" />
+      <section id="info-reseau">
+        <div class="fiche-info" id="moov"></div>
+        <div class="fiche-info" id="mtn"></div>
+        <div class="fiche-info" id="celtis"></div>
+      </section>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore
+        perferendis fuga animi sequi ex, dolor asperiores nulla ratione
+        quibusdam sint facilis sed delectus similique, eos magni neque minus
+        officiis <omnis class="lo"></omnis> Lorem ipsum dolor, sit amet
+        consectetur adipisicing elit. Quasi eveniet alias minima ab.
+        Perspiciatis velit expedita placeat perferendis, quis hic id aspernatur
+        natus sit laudantium, suscipit voluptatum praesentium, dolore vitae.lor
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ipsam
+        blanditiis, consectetur temporibus voluptates quas non rerum ullam
+        laboriosam vitae in quidem illo excepturi. Quia, a dolore. Cupiditate,
+        nemo deserunt.
+      </p>
+    </main>
+    <footer>
+      <p>&copy;2026 Armel cyrile - GSM BENIN CHEKER</p>
+      <div class="social-links">
+        <a href="https://wa.me/+2290147588437"
+          ><i class="fab fa-whatsapp"></i
+        ></a>
+
+        <a href="mailto:yakpabio66@gmail.com">
+          <i class="fa-solid fa-envelope"></i
+        ></a>
+
+        <a
+          href="https://www.linkedin.com/in/biaou-armel-cyrile-yakpa-38705b3a9/"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+
+        <a href="https://github.com/armelcyrile-web/"
+          ><i class="fab fa-github"></i
+        ></a>
+      </div>
+    </footer>
+
     <script src="gsm.js"></script>
-</body>
-</html> 
+  </body>
+</html>
