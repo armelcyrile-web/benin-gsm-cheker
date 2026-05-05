@@ -1,9 +1,14 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta
+      name="description"
+      content="Identifiez instantanément l'opérateur mobile d'un numéro béninois — MTN, Moov Africa ou Celtiis. Outil gratuit basé sur les directives de l'ARCEP Bénin."
+    />
+    <title>BENIN GSM CHECKER</title>
+    <link rel="icon" href="./images/logogsm.jpeg" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Inter:wght@300;400;700&display=swap"
       rel="stylesheet"
@@ -12,80 +17,133 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
-
     <link rel="stylesheet" href="gsm.css" />
   </head>
   <body>
     <header>
-      <div class="logo">LOGO</div>
+      <div class="logo">
+        <img
+          src="./images/logogsm.jpeg"
+          alt="Logo Benin GSM Checker"
+          class="logo-img"
+        />
+        <span class="logo-nom">BENIN GSM CHECKER</span>
+      </div>
       <nav>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Moov</a></li>
-          <li><a href="#">Mtn</a></li>
-          <li><a href="#">Celtis</a></li>
-          <li><a href="#">About</a></li>
+          <li><a href="#identifier">Home</a></li>
+          <li><a href="#comment-ca-marche">Comment ça marche ?</a></li>
+          <li><a href="#about">About</a></li>
         </ul>
       </nav>
       <div class="burger">
         <span></span>
       </div>
     </header>
-    <main>
-      <label for=""> Identifier l'opérateur mobile</label>
+
+    <main id="identifier">
+      <label for="num">Identifier l'opérateur mobile</label>
       <div class="cont">
         <i class="fas fa-phone-alt"></i>
-        <span>(+229) 01</span><span></span><label for="contact"></label
-        ><input
+        <span class="prefixe">(+229) 01 </span>
+        <input
           type="text"
-          placeholder=" Ex : 95 00 00 00  "
-          name=""
+          placeholder="Ex : 95 00 00 00"
+          name="numero"
           id="num"
           maxlength="8"
         />
       </div>
-      <br />
-      <p id="number">veuillez entrer des nombres svp !!!</p>
+      <p id="number">Veuillez entrer des chiffres uniquement.</p>
       <p id="resultat"></p>
-      <img src="" alt="" id="logo_reseau" />
-      <section id="info-reseau">
-        <div class="fiche-info" id="moov"></div>
-        <div class="fiche-info" id="mtn"></div>
-        <div class="fiche-info" id="celtis"></div>
+      <img src="" alt="Logo de l'opérateur détecté" id="logo_reseau" />
+
+      <section id="comment-ca-marche">
+        <h2>Comment ça marche ?</h2>
+        <p class="intro-cmm">
+          Depuis le 30 novembre 2024, tous les numéros mobiles au Bénin sont
+          passés à 10 chiffres. Le préfixe national <strong>01</strong> est
+          désormais commun à tous les opérateurs et est maintenu automatiquement
+          dans la barre de recherche.
+        </p>
+        <div class="etapes">
+          <div class="etape">
+            <span class="etape-icon">📱</span>
+            <div>
+              <h3>Saisissez vos 8 chiffres</h3>
+              <p>
+                Le préfixe <strong>01</strong> est déjà verrouillé. Entrez
+                simplement les 8 chiffres restants de votre numéro.
+              </p>
+            </div>
+          </div>
+          <div class="etape">
+            <span class="etape-icon">🔍</span>
+            <div>
+              <h3>Identification instantanée</h3>
+              <p>
+                Dès les <strong>2 premiers chiffres</strong> saisis, le site
+                détecte automatiquement votre opérateur — MTN, Moov Africa ou
+                Celtiis — sans avoir à taper le numéro en entier.
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore
-        perferendis fuga animi sequi ex, dolor asperiores nulla ratione
-        quibusdam sint facilis sed delectus similique, eos magni neque minus
-        officiis <omnis class="lo"></omnis> Lorem ipsum dolor, sit amet
-        consectetur adipisicing elit. Quasi eveniet alias minima ab.
-        Perspiciatis velit expedita placeat perferendis, quis hic id aspernatur
-        natus sit laudantium, suscipit voluptatum praesentium, dolore vitae.lor
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ipsam
-        blanditiis, consectetur temporibus voluptates quas non rerum ullam
-        laboriosam vitae in quidem illo excepturi. Quia, a dolore. Cupiditate,
-        nemo deserunt.
-      </p>
+
+      <section id="about">
+        <h2>À propos</h2>
+        <div class="about-content">
+          <p>
+            <strong>Benin GSM Checker</strong> est un outil gratuit conçu pour
+            aider les utilisateurs à identifier rapidement l'opérateur d'un
+            numéro mobile béninois. Simple, rapide et respectueux de votre vie
+            privée —
+            <strong
+              >aucune donnée saisie n'est collectée ni enregistrée.</strong
+            >
+          </p>
+          <div class="arcep-box">
+            <h3>🏛️ Conformité ARCEP Bénin</h3>
+            <p>
+              Cet outil est basé sur les directives officielles de l'
+              <strong>
+                ARCEP (Autorité de Régulation des Communications Électroniques
+                et de la Poste)</strong
+              >. Depuis le 30 novembre 2024, le Bénin utilise un plan de
+              numérotation à 10 chiffres. Le préfixe <strong>01</strong> est
+              commun à tous les opérateurs — c'est la combinaison des
+              <strong>2 chiffres suivants</strong> qui permet d'identifier le
+              réseau : MTN, Moov Africa ou Celtiis.
+            </p>
+          </div>
+          <p class="about-dev">
+            Développé par <strong>Armel Cyrile Yakpa</strong> ,étudiant en
+            Informatique de Gestion à l'ENEAM.
+          </p>
+          <a href="#identifier" class="btn-retour">🔍 Identifier un numéro</a>
+        </div>
+      </section>
     </main>
+
     <footer>
-      <p>&copy;2026 Armel cyrile - GSM BENIN CHEKER</p>
+      <p>&copy; 2026 Armel Cyrile — GSM BENIN CHECKER</p>
       <div class="social-links">
-        <a href="https://wa.me/+2290147588437"
-          ><i class="fab fa-whatsapp"></i
-        ></a>
-
-        <a href="mailto:yakpabio66@gmail.com">
-          <i class="fa-solid fa-envelope"></i
-        ></a>
-
+        <a href="https://wa.me/+2290147588437" aria-label="WhatsApp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="mailto:yakpabio66@gmail.com" aria-label="Email">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
         <a
           href="https://www.linkedin.com/in/biaou-armel-cyrile-yakpa-38705b3a9/"
-          ><i class="fab fa-linkedin"></i
-        ></a>
-
-        <a href="https://github.com/armelcyrile-web/"
-          ><i class="fab fa-github"></i
-        ></a>
+          aria-label="LinkedIn"
+        >
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/armelcyrile-web/" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
       </div>
     </footer>
 
